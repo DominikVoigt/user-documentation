@@ -29,14 +29,10 @@ Example study definition file
 
 @Library{library1,
   name = {Springer},
-  enabled = {true},
-  comment = {},
 }
 
 @Library{library2,
   name = {IEEEXplore},
-  enabled = {false},
-  comment = {},
 }
 ```
 
@@ -57,3 +53,38 @@ The local repository now contains the retrieved studies sorted by the respective
 
 The `result.bib` located in the query folder contains the merged results from all fetcher for the respective query.
 The `studyResult.bib` contains the merged results for all queries.
+
+## Advanced usage
+
+One can include add comments to fetchers and disabled fetchers explicitely:
+
+```bibtex
+% Encoding: UTF-8
+
+@Study{v10,
+  author            = {Jab Ref},
+  lastsearchdate    = {2020-11-18},
+  name              = {TestStudyName},
+  researchquestions = {Question1; Question2; Question3},
+}
+
+@SearchQuery{query1,
+  query={Quantum},
+}
+
+@SearchQuery{query2,
+  query={title:"Cloud Computing"},
+}
+
+@Library{library1,
+  name = {Springer},
+  enabled = {true},
+  comment = {Offers information in the field},
+}
+
+@Library{library2,
+  name = {IEEEXplore},
+  enabled = {false},
+  comment = {Currently no capacity to check these results},
+}
+```
