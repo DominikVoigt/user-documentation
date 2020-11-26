@@ -3,40 +3,30 @@
 ## Providing a study file for automated search
 
 To provide automated search JabRef needs the set of targeted digital libraries and the used queries.
-To provide these a `study.bib` file, also called study definition, has to be created.
+To provide these a `study.yml` file, also called study definition, has to be created.
 This file contains different entries with different information.
 This file have to be provided within an otherwise empty fully setup git repository.
 
-Example study definition file
+Example study definition file:
 
-```bibtex
-% Encoding: UTF-8
+```yaml
+authors:
+- Jab Ref
+- Ref Jab
+studyName: TestStudyName
+lastSearchDate: 2020-11-26
+researchQuestions:
+- Question1
+- Question2
+queries:
+- query: Quantum
+- query: '"Software Engineering"'
+libraries:
+- name: Springer
+- name: IEEEXplore
+  enabled: false
 
-@Study{v10,
-  author            = {Jab Ref},
-  lastsearchdate    = {2020-11-18},
-  name              = {TestStudyName},
-  researchquestions = {Question1; Question2; Question3},
-}
 
-@SearchQuery{query1,
-  query={Quantum},
-}
-
-@SearchQuery{query2,
-  query={title:"Cloud Computing"},
-}
-
-@Library{library1,
-  name = {Springer},
-  enabled = {true},
-  comment = {},
-}
-
-@Library{library2,
-  name = {IEEEXplore},
-  enabled = {false},
-  comment = {},
 }
 ```
 
