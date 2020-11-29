@@ -11,22 +11,21 @@ Example study definition file:
 
 ```yaml
 authors:
-- Jab Ref
-- Ref Jab
-studyName: TestStudyName
-lastSearchDate: 2020-11-26
-researchQuestions:
-- Question1
-- Question2
+  - Jab Ref
+title: TestStudyName
+last-search-date: 2020-11-26
+research-questions:
+  - Question1
+  - Question2
 queries:
-- query: Quantum
-- query: '"Software Engineering"'
-libraries:
-- name: Springer
-- name: IEEEXplore
-  enabled: false
-
-
+  - query: Quantum
+  - query: Cloud Computing
+  - query: '"Software Engineering"'
+databases:
+  - name: Springer
+  - name: ArXiv
+  - name: IEEEXplore
+    enabled: false
 }
 ```
 
