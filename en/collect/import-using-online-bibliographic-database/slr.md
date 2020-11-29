@@ -33,7 +33,7 @@ databases:
 
 To execute the automated search navigate in the toolbar to **Tools\|Start systematic literature review** and click it.
 
-![Start an automated search](../../.gitbook/assets/start-SLR.png)
+![Start an automated search](../../.gitbook/assets/start-slr.png)
 
 Then select the `study.bib` file in the file explorer dialogue that is located in the git repository.
 
